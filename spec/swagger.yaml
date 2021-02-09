@@ -90,21 +90,21 @@ paths:
   '/payments/{id}/voids':
     $ref: './spec/paths/payments@{id}@voids.yaml'
   '/reporting/payments':
-    $ref: './spec/paths/reporting@payments.yaml'
+    $ref: './paths/reporting@payments.yaml'
   '/reporting/payments/{paymentId}':
-    $ref: './spec/paths/reporting@payments@{paymentId}.yaml'
+    $ref: './paths/reporting@payments@{paymentId}.yaml'
   '/reporting/payments/download':
-    $ref: '.spec/paths/reporting@payments@download.yaml'
+    $ref: './paths/reporting@payments@download.yaml'
   '/reporting/statements':
-    $ref: './spec/paths/reporting@statements.yaml'
+    $ref: './paths/reporting@statements.yaml'
   '/reporting/statements/{StatementId}':
-    $ref: '.spec/paths/reporting@statements@{StatementId}.yaml'
+    $ref: './paths/reporting@statements@{StatementId}.yaml'
   '/reporting/statements/download':
-    $ref: './spec/paths/reporting@statements@download.yaml'
+    $ref: './paths/reporting@statements@download.yaml'
   '/sources':
-    $ref: './spec/paths/sources.yaml'
+    $ref: './paths/sources.yaml'
   '/tokens':
-    $ref: './spec/paths/tokens.yaml'
+    $ref: './paths/tokens.yaml'
   '/webhooks':
     $ref: './paths/webhooks.yaml'
   '/webhooks/{id}':

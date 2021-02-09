@@ -1,6 +1,7 @@
 get:
   security:
-    - ApiSecretKey: []
+    ApiSecretKey:
+      $ref: "#/components/securitySchemes/ApiSecretKey.yaml"
   tags:
     - Webhooks
   summary: Retrieve webhooks
