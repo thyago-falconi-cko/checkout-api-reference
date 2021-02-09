@@ -78,7 +78,7 @@ paths:
   '/payment-links':
     $ref: 'paths/payment-links.yaml'
   '/payments':
-    $ref: 'paths/payments/yaml'
+    $ref: 'paths/payments.yaml'
   '/payments/{id}':
     $ref: 'paths/payments@{id}.yaml'
   '/payments/{id}/actions':
@@ -97,8 +97,8 @@ paths:
     $ref: 'paths/reporting@payments@download.yaml'
   '/reporting/statements':
     $ref: 'paths/reporting@statements.yaml'
-  '/reporting/statements/{StatementId}':
-    $ref: 'paths/reporting@statements@{StatementId}.yaml'
+  'reporting@statements@{StatementId}@payments@download':
+    $ref: 'paths/reporting@statements@{StatementId}@payments@download.yaml'
   '/reporting/statements/download':
     $ref: 'paths/reporting@statements@download.yaml'
   '/sources':
