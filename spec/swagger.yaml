@@ -114,9 +114,11 @@ components:
     ApiSecretKey:
       type: apiKey
       in: header
+      name: X-API-KEY
     ApiPublicKey:
       type: apiKey
       in: header
+      name: X-API-KEY
 tags:
   - name: Payments
     description: Process and manage payments from a variety of sources and to various destinations all within one integration.
