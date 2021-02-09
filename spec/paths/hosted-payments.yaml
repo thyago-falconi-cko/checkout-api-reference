@@ -14,14 +14,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/HostedPaymentsRequest
+          $ref: "../components/schemas/HostedPaymentsRequest"
   responses:
     "201":
       description: Created Hosted Payments Page
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/HostedPaymentsResponse
+            $ref: "../components/schemas/HostedPaymentsResponse"
     "401":
       description: Unauthorized
     "422":
@@ -29,4 +29,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/ValidationError
+            $ref: "../components/schemas/ValidationError"

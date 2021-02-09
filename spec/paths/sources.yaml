@@ -13,19 +13,19 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/SourceRequest
+          $ref: '../components/schemas/SourceRequest'
   responses:
     '201':
       description: Payment source added successfully
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/AddSourceResponse
+            $ref: '../components/schemas/AddSourceResponse'
       headers:
         Cko-Request-Id:
-          $ref: ../components/headers/Cko-Request-Id
+          $ref: "../components/headers/Cko-Request-Id"
         Cko-Version:
-          $ref: ../components/headers/Cko-Version
+          $ref: "../components/headers/Cko-Version"
     '401':
       description: Unauthorized
     '422':
@@ -33,6 +33,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/ValidationError
+            $ref: '../components/schemas/ValidationError'
     '502':
       description: Bad gateway

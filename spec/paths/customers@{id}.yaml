@@ -19,7 +19,7 @@ patch:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/UpdateCustomerRequest
+          $ref: '../components/schemas/UpdateCustomerRequest'
   responses:
     '204':
       description: Customer updated successfully
@@ -30,6 +30,6 @@ patch:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/ValidationError
+            $ref: '../components/schemas/ValidationError'
     '404':
       description: Customer not found
