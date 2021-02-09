@@ -5,7 +5,7 @@ referenceDocs:
   ctrlFHijack: true
   expandResponses: "200,201,202"
   payloadSampleIdx: 1
-  htmlTemplate: "../index.html"
+  htmlTemplate: "../web/index.html"
   layout: 
     showConsole: true
     scope: section
