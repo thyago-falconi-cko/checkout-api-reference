@@ -19,7 +19,11 @@ patch:
     content:
       application/json:
         schema:
+<<<<<<< HEAD
           $ref: '#/components/schemas/UpdateCustomerRequest'
+=======
+          $ref: './components/schemas/UpdateCustomerRequest'
+>>>>>>> parent of 91a486d (Revert "Testing")
   responses:
     '204':
       description: Customer updated successfully
@@ -30,6 +34,10 @@ patch:
       content:
         application/json:
           schema:
+<<<<<<< HEAD
             $ref: '#/components/schemas/ValidationError'
+=======
+            $ref: './components/schemas/ValidationError'
+>>>>>>> parent of 91a486d (Revert "Testing")
     '404':
       description: Customer not found
