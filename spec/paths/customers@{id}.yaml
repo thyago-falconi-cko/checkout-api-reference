@@ -19,7 +19,7 @@ patch:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/UpdateCustomerRequest'
+          $ref: '../components/schemas/Customers/UpdateCustomerRequest'
   responses:
     '204':
       description: Customer updated successfully
