@@ -46,7 +46,7 @@ servers:
     description: Sandbox API
 paths:
   '/customers/{id}':
-    $ref: 'paths/customer@{id}.yaml'
+    $ref: 'paths/customers@{id}.yaml'
   '/disputes':
     $ref: 'paths/disputes.yaml'
   '/disputes/{dispute_id}':
@@ -59,8 +59,8 @@ paths:
     $ref: 'paths/event-types.yaml'
   '/events/{eventId}':
     $ref: 'paths/events@{eventId}.yaml'
-  '/events/{eventId}/notifications/{notificationsId}':
-    $ref: 'paths/events@{eventId}@notifications@{notificationsId}.yaml'
+  '/events@{eventId}@notifications@{notificationId}.yaml':
+    $ref: 'paths/events@{eventId}@notifications@{notificationId}.yaml'
   '/events/{eventId}/webhooks/{webhookId}/retry':
     $ref: 'paths/events@{eventId}@webhooks@{webhookId}@retry.yaml'
   '/events/{eventId}/webhooks/retry.yaml':
