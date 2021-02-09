@@ -45,6 +45,7 @@ servers:
   - url: https://api.sandbox.checkout.com
     description: Sandbox API
 paths:
+<<<<<<< HEAD
   /customers/{id}:
     $ref: 'paths/customer@{id}.yaml'
   /disputes:
@@ -108,6 +109,71 @@ paths:
   /webhooks:
     $ref: 'paths/webhooks.yaml'
   /webhooks/{id}:
+=======
+  '/customers/{id}':
+    $ref: 'paths/customer@{id}.yaml'
+  '/disputes':
+    $ref: 'paths/disputes.yaml'
+  '/disputes/{dispute_id}':
+    $ref: 'paths/disputes@{dispute_id}.yaml'
+  '/disputes/{dispute_id}/accept':
+    $ref: 'paths/disputes@{dispute_id}@accept.yaml'
+  '/disputes/{dispute_id}/evidence':
+    $ref: 'paths/disputes@{dispute_id}@evidence.yaml'
+  '/event-types':
+    $ref: 'paths/event-types.yaml'
+  '/events/{eventId}':
+    $ref: 'paths/events@{eventId}.yaml'
+  '/events/{eventId}/notifications/{notificationsId}':
+    $ref: 'paths/events@{eventId}@notifications@{notificationsId}.yaml'
+  '/events/{eventId}/webhooks/{webhookId}/retry':
+    $ref: 'paths/events@{eventId}@webhooks@{webhookId}@retry.yaml'
+  '/events/{eventId}/webhooks/retry.yaml':
+    $ref: 'paths/events@{eventId}@webhooks@retry.yaml'
+  '/files':
+    $ref: 'paths/files.yaml'
+  '/files/{file_id}':
+    $ref: 'paths/files@{file_id}.yaml'
+  '/hosted-payments':
+    $ref: 'paths/hosted-payments.yaml'
+  '/instruments':
+    $ref: 'paths/instruments.yaml'
+  '/instruments/{id}':
+    $ref: 'paths/instruments@{id}.yaml'
+  '/payment-links':
+    $ref: 'paths/payment-links.yaml'
+  '/payments':
+    $ref: 'paths/payments/yaml'
+  '/payments/{id}':
+    $ref: 'paths/payments@{id}.yaml'
+  '/payments/{id}/actions':
+    $ref: 'paths/payments@{id}@actions.yaml'
+  '/payments/{id}/captures':
+    $ref: 'paths/payments@{id}@captures.yaml'
+  '/payments/{id}/refunds':
+    $ref: 'paths/payments@{id}@refunds.yaml'
+  '/payments/{id}/voids':
+    $ref: 'paths/payments@{id}@voids.yaml'
+  '/reporting/payments':
+    $ref: 'paths/reporting@payments.yaml'
+  '/reporting/payments/{paymentId}':
+    $ref: 'paths/reporting@payments@{paymentId}.yaml'
+  '/reporting/payments/download':
+    $ref: 'paths/reporting@payments@download.yaml'
+  '/reporting/statements':
+    $ref: 'paths/reporting@statements.yaml'
+  '/reporting/statements/{StatementId}':
+    $ref: 'paths/reporting@statements@{StatementId}.yaml'
+  '/reporting/statements/download':
+    $ref: 'paths/reporting@statements@download.yaml'
+  '/sources':
+    $ref: 'paths/sources.yaml'
+  '/tokens':
+    $ref: 'paths/tokens.yaml'
+  '/webhooks':
+    $ref: 'paths/webhooks.yaml'
+  '/webhooks/{id}':
+>>>>>>> parent of 91a486d (Revert "Testing")
     $ref: 'paths/webhooks@{id}.yaml'
 tags:
   - name: Payments
