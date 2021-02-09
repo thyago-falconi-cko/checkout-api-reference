@@ -17,4 +17,6 @@ referenceDocs:
   generateCodeSamples: 
       languages: 
         - lang: "curl, Node.js, JavaScript, Python, C#"
+  lint:
+  doNotResolveExamples: true
   
