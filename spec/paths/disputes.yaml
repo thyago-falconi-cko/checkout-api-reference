@@ -84,7 +84,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "components/schemas/DisputePaged.yaml"
+            $ref: "../components/schemas/DisputePaged.yaml"
     "401":
       description: Unauthorized
     "422":
