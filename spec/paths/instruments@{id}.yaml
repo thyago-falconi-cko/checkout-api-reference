@@ -20,12 +20,12 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/RetrieveInstrumentResponse'
+            $ref: '../components/schemas/RetrieveInstrumentResponse'
       headers:
         Cko-Request-Id:
-          $ref: "#/components/headers/Cko-Request-Id"
+          $ref: "../components/headers/Cko-Request-Id"
         Cko-Version:
-          $ref: "#/components/headers/Cko-Version"
+          $ref: "../components/headers/Cko-Version"
     '401':
       description: Unauthorized
     '404':
@@ -52,19 +52,19 @@ patch:
     content:
       application/json:
         schema:
-          $ref: '#/components/schemas/UpdateInstrumentRequest'
+          $ref: '../components/schemas/UpdateInstrumentRequest'
   responses:
     '200':
       description: Instrument updated successfully
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/UpdateInstrumentResponse'
+            $ref: '../components/schemas/UpdateInstrumentResponse'
       headers:
         Cko-Request-Id:
-          $ref: "#/components/headers/Cko-Request-Id"
+          $ref: "../components/headers/Cko-Request-Id"
         Cko-Version:
-          $ref: "#/components/headers/Cko-Version"
+          $ref: "../components/headers/Cko-Version"
     '401':
       description: Unauthorized
     '422':
@@ -72,6 +72,6 @@ patch:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/ValidationError'
+            $ref: '../components/schemas/ValidationError'
     '404':
       description: Instrument not found

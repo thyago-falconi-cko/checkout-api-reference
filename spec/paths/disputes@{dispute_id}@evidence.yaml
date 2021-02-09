@@ -6,7 +6,7 @@ put:
   summary: Provide dispute evidence
   operationId: provideDisputeEvidence
   description: |
-    Adds supporting evidence to a dispute. Before using this endpoint, you first need to [upload your files](#tag/Disputes/paths/~1files/post) using the file uploader. You will receive a file id (prefixed by `file_`) which you can then use in your request.
+    Adds supporting evidence to a dispute. Before using this endpoint, you first need to [upload your files](..tag/Disputes/paths/~1files/post) using the file uploader. You will receive a file id (prefixed by `file_`) which you can then use in your request.
     Note that this only attaches the evidence to the dispute, it does not send it to us. Once ready, you will need to submit it.
 
     **You must provide at least one evidence type in the body of your request.**
@@ -22,7 +22,7 @@ put:
     content:
       application/json:
         schema:
-          $ref: "#/components/schemas/ProvideEvidenceRequest"
+          $ref: "../components/schemas/ProvideEvidenceRequest"
   responses:
     "204":
       description: Dispute evidence provided successfully
@@ -58,7 +58,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/Evidence"
+            $ref: "../components/schemas/Evidence"
     "401":
       description: Unauthorized
     "404":
