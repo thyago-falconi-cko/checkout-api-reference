@@ -1,6 +1,5 @@
 apiDefinitions: 
-  payments: ./paths/payments.yaml
-  disputes: ./paths/disputes.yaml
+  api: spec/swagger.yaml
 referenceDocs:
   ctrlFHijack: true
   expandResponses: "200,201,202"
