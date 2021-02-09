@@ -16,12 +16,12 @@ get:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/Webhook'
+              $ref: '#/components/schemas/Webhook.yaml'
       headers:
         Cko-Request-Id:
-          $ref: "#/components/headers/Cko-Request-Id"
+          $ref: "#/components/headers/Cko-Request-Id.yaml"
         Cko-Version:
-          $ref: "#/components/headers/Cko-Version"
+          $ref: "#/components/headers/Cko-Version.yaml"
     '204':
       description: No webhooks configured
     '401':
@@ -40,19 +40,19 @@ post:
     content:
       application/json:
         schema:
-          $ref: '#/components/schemas/WebhookRequest'
+          $ref: '#/components/schemas/WebhookRequest.yaml'
   responses:
     '201':
       description: Webhook registered successfully
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Webhook'
+            $ref: '#/components/schemas/Webhook.yaml'
       headers:
         Cko-Request-Id:
-          $ref: "#/components/headers/Cko-Request-Id"
+          $ref: "#/components/headers/Cko-Request-Id.yaml"
         Cko-Version:
-          $ref: "#/components/headers/Cko-Version"
+          $ref: "#/components/headers/Cko-Version.yaml"
     '401':
       description: Unauthorized
     '422':
@@ -60,6 +60,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/ValidationError'
+            $ref: '#/components/schemas/ValidationError.yaml'
     '409':
       description: URL already registered for another webhook

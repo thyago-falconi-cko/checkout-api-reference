@@ -97,7 +97,7 @@ paths:
     $ref: 'paths/reporting@payments@download.yaml'
   '/reporting/statements':
     $ref: 'paths/reporting@statements.yaml'
-  'reporting@statements@{StatementId}@payments@download':
+  'reporting/statements/{StatementId}@payments/download':
     $ref: 'paths/reporting@statements@{StatementId}@payments@download.yaml'
   '/reporting/statements/download':
     $ref: 'paths/reporting@statements@download.yaml'

@@ -50,17 +50,17 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/PaymentsReportResponse'
+            $ref: '#/components/schemas/PaymentsReportResponse.yaml'
       headers:
         Cko-Request-Id:
-          $ref: "#/components/headers/Cko-Request-Id"
+          $ref: "#/components/headers/Cko-Request-Id.yaml"
         Cko-Version:
-          $ref: "#/components/headers/Cko-Version"
+          $ref: "#/components/headers/Cko-Version.yaml"
     '422':
       description: Invalid data was sent
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/ValidationError'
+            $ref: '#/components/schemas/ValidationError.yaml'
     '502':
       description: Bad gateway

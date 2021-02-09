@@ -12,14 +12,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '#/components/schemas/PaymentLinksRequest'
+          $ref: '#/components/schemas/PaymentLinksRequest.yaml'
   responses:
     '201':
       description: Create Payment Link Page
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/PaymentLinksResponse'
+            $ref: '#/components/schemas/PaymentLinksResponse.yaml'
     '401':
       description: Unauthorized
     '422':
@@ -27,4 +27,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/ValidationError'
+            $ref: '#/components/schemas/ValidationError.yaml'

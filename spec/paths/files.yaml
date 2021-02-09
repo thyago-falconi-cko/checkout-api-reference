@@ -11,19 +11,19 @@ post:
     content:
       multipart/form-data:
         schema:
-          $ref: "#/components/schemas/File"
+          $ref: "#/components/schemas/File.yaml"
   responses:
     "200":
       description: File uploaded successfully
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/FileUploadResponse"
+            $ref: "#/components/schemas/FileUploadResponse.yaml"
       headers:
         Cko-Request-Id:
-          $ref: "#/components/headers/Cko-Request-Id"
+          $ref: "#/components/headers/Cko-Request-Id.yaml"
         Cko-Version:
-          $ref: "#/components/headers/Cko-Version"
+          $ref: "#/components/headers/Cko-Version.yaml"
     "401":
       description: Unauthorized
     "422":
