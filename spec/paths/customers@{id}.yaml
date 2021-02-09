@@ -31,4 +31,5 @@ patch:
         application/json:
           schema:
             $ref: '#/components/schemas/ValidationError'
+    '404':
       description: Customer not found

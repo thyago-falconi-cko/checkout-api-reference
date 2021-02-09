@@ -62,15 +62,15 @@ paths:
   '/events/{eventId}/notifications/{notificationsId}':
     $ref: './spec/paths/events@{eventId}@notifications@{notificationsId}.yaml'
   '/events/{eventId}/webhooks/{webhookId}/retry':
-    $ref: './spec/paths/events@{eventId}@webhooks@{webhookId}@retry.yaml'
+    $ref: 'spec/paths/events@{eventId}@webhooks@{webhookId}@retry.yaml'
   '/events/{eventId}/webhooks/retry.yaml':
-    $ref: './spec/paths/events@{eventId}@webhooks@retry.yaml'
+    $ref: 'spec/paths/events@{eventId}@webhooks@retry.yaml'
   '/files':
-    $ref: './spec/paths/files.yaml'
+    $ref: 'spec/paths/files.yaml'
   '/files/{file_id}':
     $ref: './spec/paths/files@{file_id}.yaml'
   '/hosted-payments':
-    $ref: './spec/paths/hosted-payments.yaml'
+    $ref: 'spec/paths/hosted-payments.yaml'
   '/instruments':
     $ref: './spec/paths/instruments.yaml'
   '/instruments/{id}':
