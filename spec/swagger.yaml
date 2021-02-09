@@ -46,49 +46,49 @@ servers:
     description: Sandbox API
 paths:
   '/customers/{id}':
-    $ref: './spec/paths/customer@{id}.yaml'
+    $ref: './paths/customer@{id}.yaml'
   '/disputes':
-    $ref: './spec/paths/disputes.yaml'
+    $ref: './paths/disputes.yaml'
   '/disputes/{dispute_id}':
-    $ref: './spec/paths/disputes@{dispute_id}.yaml'
+    $ref: './paths/disputes@{dispute_id}.yaml'
   '/disputes/{dispute_id}/accept':
-    $ref: './spec/paths/disputes@{dispute_id}@accept.yaml'
+    $ref: './paths/disputes@{dispute_id}@accept.yaml'
   '/disputes/{dispute_id}/evidence':
-    $ref: './spec/paths/disputes@{dispute_id}@evidence.yaml'
+    $ref: './paths/disputes@{dispute_id}@evidence.yaml'
   '/event-types':
-    $ref: './spec/paths/event-types.yaml'
+    $ref: './paths/event-types.yaml'
   '/events/{eventId}':
-    $ref: './spec/paths/events@{eventId}.yaml'
+    $ref: './paths/events@{eventId}.yaml'
   '/events/{eventId}/notifications/{notificationsId}':
-    $ref: './spec/paths/events@{eventId}@notifications@{notificationsId}.yaml'
+    $ref: './paths/events@{eventId}@notifications@{notificationsId}.yaml'
   '/events/{eventId}/webhooks/{webhookId}/retry':
-    $ref: 'spec/paths/events@{eventId}@webhooks@{webhookId}@retry.yaml'
+    $ref: './paths/events@{eventId}@webhooks@{webhookId}@retry.yaml'
   '/events/{eventId}/webhooks/retry.yaml':
-    $ref: 'spec/paths/events@{eventId}@webhooks@retry.yaml'
+    $ref: './paths/events@{eventId}@webhooks@retry.yaml'
   '/files':
-    $ref: 'spec/paths/files.yaml'
+    $ref: './paths/files.yaml'
   '/files/{file_id}':
-    $ref: '/spec/paths/files@{file_id}.yaml'
+    $ref: './paths/files@{file_id}.yaml'
   '/hosted-payments':
-    $ref: 'spec/paths/hosted-payments.yaml'
+    $ref: './paths/hosted-payments.yaml'
   '/instruments':
-    $ref: '/spec/paths/instruments.yaml'
+    $ref: './paths/instruments.yaml'
   '/instruments/{id}':
-    $ref: '/spec/paths/instruments@{id}.yaml'
+    $ref: '/paths/instruments@{id}.yaml'
   '/payment-links':
-    $ref: './spec/paths/payment-links.yaml'
+    $ref: './paths/payment-links.yaml'
   '/payments':
-    $ref: './spec/paths/payments/yaml'
+    $ref: './paths/payments/yaml'
   '/payments/{id}':
-    $ref: './spec/paths/payments@{id}.yaml'
+    $ref: './paths/payments@{id}.yaml'
   '/payments/{id}/actions':
-    $ref: './spec/paths/payments@{id}@actions.yaml'
+    $ref: './paths/payments@{id}@actions.yaml'
   '/payments/{id}/captures':
-    $ref: './spec/paths/payments@{id}@captures.yaml'
+    $ref: './paths/payments@{id}@captures.yaml'
   '/payments/{id}/refunds':
-    $ref: './spec/paths/payments@{id}@refunds.yaml'
+    $ref: './paths/payments@{id}@refunds.yaml'
   '/payments/{id}/voids':
-    $ref: './spec/paths/payments@{id}@voids.yaml'
+    $ref: './paths/payments@{id}@voids.yaml'
   '/reporting/payments':
     $ref: './paths/reporting@payments.yaml'
   '/reporting/payments/{paymentId}':
