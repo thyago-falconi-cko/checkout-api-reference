@@ -1,7 +1,6 @@
 get:
   security:
-    ApiSecretKey:
-      $ref: "./components/securitySchemes/ApiSecretKey.yaml"
+    - ApiSecretKey: []
   tags:
     - Webhooks
   summary: Retrieve webhook
@@ -36,8 +35,7 @@ get:
 
 put:
   security:
-    ApiSecretKey:
-      $ref: "./components/securitySchemes/ApiSecretKey.yaml"
+    - ApiSecretKey: []
   tags:
     - Webhooks
   summary: Update webhook
@@ -81,8 +79,7 @@ put:
 
 patch:
   security:
-    ApiSecretKey:
-      $ref: "./components/securitySchemes/ApiSecretKey.yaml"
+    - ApiSecretKey: []
   tags:
     - Webhooks
   summary: Partially update webhook

@@ -109,6 +109,14 @@ paths:
     $ref: '#/paths/webhooks.yaml'
   '/webhooks/{id}':
     $ref: 'paths/webhooks@{id}.yaml'
+components:
+  securitySchemes:
+    ApiSecretKey:
+      type: apiKey
+      in: header
+    ApiPublicKey:
+      type: apiKey
+      in: header
 tags:
   - name: Payments
     description: Process and manage payments from a variety of sources and to various destinations all within one integration.
