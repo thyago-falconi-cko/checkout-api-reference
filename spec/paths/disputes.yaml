@@ -92,4 +92,4 @@ get:
       content:
         application/json:
           schema:
-            $ref: "components/schemas/PagingError.yaml"
+            $ref: "../components/schemas/Disputes/DisputePaged.yaml"

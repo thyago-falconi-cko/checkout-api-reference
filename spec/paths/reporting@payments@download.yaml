@@ -27,3 +27,6 @@ get:
         format: date-time
       required: false
       description: Date and time until which to search for payments
+  responses:
+    '404':
+      description: Not found
