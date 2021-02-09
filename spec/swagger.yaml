@@ -68,13 +68,13 @@ paths:
   '/files':
     $ref: 'spec/paths/files.yaml'
   '/files/{file_id}':
-    $ref: './spec/paths/files@{file_id}.yaml'
+    $ref: '/spec/paths/files@{file_id}.yaml'
   '/hosted-payments':
     $ref: 'spec/paths/hosted-payments.yaml'
   '/instruments':
-    $ref: './spec/paths/instruments.yaml'
+    $ref: '/spec/paths/instruments.yaml'
   '/instruments/{id}':
-    $ref: './spec/paths/instruments@{id}.yaml'
+    $ref: '/spec/paths/instruments@{id}.yaml'
   '/payment-links':
     $ref: './spec/paths/payment-links.yaml'
   '/payments':
