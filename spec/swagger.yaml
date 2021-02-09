@@ -106,9 +106,9 @@ paths:
   '/tokens':
     $ref: './spec/paths/tokens.yaml'
   '/webhooks':
-    $ref: './spec/paths/webhooks.yaml'
+    $ref: 'spec/paths/webhooks.yaml'
   '/webhooks/{id}':
-    $ref: './spec/paths/webhooks@{id}.yaml'
+    $ref: 'spec/paths/webhooks@{id}.yaml'
 tags:
   - name: Payments
     description: Process and manage payments from a variety of sources and to various destinations all within one integration.
