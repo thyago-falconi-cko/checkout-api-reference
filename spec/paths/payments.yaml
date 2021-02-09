@@ -131,20 +131,20 @@ post:
                 href: "https://api.sandbox.checkout.com/payments/pay_mbabizu24mvu3mela5njyhpit4/captures"
       headers:
         Cko-Request-Id:
-          $ref: "../components/headers/Cko-Request-Id"
+          $ref: ../components/headers/Cko-Request-Id
         Cko-Version:
-          $ref: "../components/headers/Cko-Version"
+          $ref: ../components/headers/Cko-Version
     '202':
       description: Payment asynchronous or further action required
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/PaymentAcceptedResponse'
+            $ref: ../components/schemas/PaymentAcceptedResponse
       headers:
         Cko-Request-Id:
-          $ref: "../components/headers/Cko-Request-Id"
+          $ref: ../components/headers/Cko-Request-Id
         Cko-Version:
-          $ref: "../components/headers/Cko-Version"
+          $ref: ../components/headers/Cko-Version
     '401':
       description: Unauthorized
     '429':
@@ -152,12 +152,12 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ValidationError'
+            $ref: ../components/schemas/ValidationError
     '422':
       description: Invalid data was sent
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ValidationError'
+            $ref: ../components/schemas/ValidationError
     '502':
       description: Bad gateway

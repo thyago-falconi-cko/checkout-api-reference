@@ -84,7 +84,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/DisputePaged"
+            $ref: ../components/schemas/DisputePaged
     "401":
       description: Unauthorized
     "422":
@@ -92,4 +92,4 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/PagingError"
+            $ref: ../components/schemas/PagingError

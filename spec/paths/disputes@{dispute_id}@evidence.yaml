@@ -22,7 +22,7 @@ put:
     content:
       application/json:
         schema:
-          $ref: "../components/schemas/ProvideEvidenceRequest"
+          $ref: ../components/schemas/ProvideEvidenceRequest
   responses:
     "204":
       description: Dispute evidence provided successfully
@@ -58,7 +58,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/Evidence"
+            $ref: ../components/schemas/Evidence
     "401":
       description: Unauthorized
     "404":

@@ -22,19 +22,19 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/VoidRequest'
+          $ref: ../components/schemas/VoidRequest
   responses:
     '202':
       description: Void accepted
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/VoidAcceptedResponse'
+            $ref: ../components/schemas/VoidAcceptedResponse
       headers:
         Cko-Request-Id:
-          $ref: "../components/headers/Cko-Request-Id"
+          $ref: ../components/headers/Cko-Request-Id
         Cko-Version:
-          $ref: "../components/headers/Cko-Version"
+          $ref: ../components/headers/Cko-Version
     '401':
       description: Unauthorized
     '422':
@@ -42,7 +42,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ValidationError'
+            $ref: ../components/schemas/ValidationError
     '403':
       description: Void not allowed
     '404':
