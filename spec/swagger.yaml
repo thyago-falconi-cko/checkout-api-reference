@@ -108,7 +108,7 @@ paths:
   '/webhooks':
     $ref: '#/paths/webhooks.yaml'
   '/webhooks/{id}':
-    $ref: '#/paths/webhooks&#64;{id}.yaml'
+    $ref: '#paths/webhooks@{id}.yaml'
 tags:
   - name: Payments
     description: Process and manage payments from a variety of sources and to various destinations all within one integration.
