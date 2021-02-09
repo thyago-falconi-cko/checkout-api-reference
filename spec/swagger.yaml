@@ -74,7 +74,7 @@ paths:
   '/instruments':
     $ref: '#/paths/instruments.yaml'
   '/instruments/{id}':
-    $ref: '/paths/instruments@{id}.yaml'
+    $ref: '#/paths/instruments@{id}.yaml'
   '/payment-links':
     $ref: '#/paths/payment-links.yaml'
   '/payments':
@@ -106,7 +106,7 @@ paths:
   '/tokens':
     $ref: '#/paths/tokens.yaml'
   '/webhooks':
-    $ref: '#/paths/webhooks.yaml'
+    $ref: '../paths/webhooks.yaml'
   '/webhooks/{id}':
     $ref: '#/paths/webhooks@{id}.yaml'
 tags:
