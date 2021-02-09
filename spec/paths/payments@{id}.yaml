@@ -27,12 +27,12 @@ get:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Payment.yaml'
+            $ref: '../components/schemas/Payment.yaml'
       headers:
         Cko-Request-Id:
-          $ref: "#/components/headers/Cko-Request-Id.yaml"
+          $ref: "../components/headers/Cko-Request-Id.yaml"
         Cko-Version:
-          $ref: "#/components/headers/Cko-Version.yaml"
+          $ref: "../components/headers/Cko-Version.yaml"
     '401':
       description: Unauthorized
     '404':
