@@ -79,6 +79,6 @@ referenceDocs:
   corsProxyUrl: "" # Controls whether the requests sent from the API Console (the Try it functionality) should go through a CORS proxy. To use the Redocly CORS proxy, set "https://cors.redoc.ly" as the value. Alternatively, set the URL of your own CORS proxy server as the value. The showConsole option must be enabled for this feature to work.
   generateCodeSamples:
     languages:  # Array of language config objects; indicates in which languages to generate code samples.
-      - lang: "" # Can be one of the following supported languages: "curl", "Node.js", "JavaScript", "Python", "C#".
+      - lang: "curl, Node.js, JavaScript, Python, C#" # Can be one of the following supported languages: "curl", "Node.js", "JavaScript", "Python", "C#".
         label: "" # Optional label for the generated code sample. Can be any string, e.g. "JS" or "Awesome Language". When configured here, the label is displayed insted of "lang" as the tab caption in the Request samples section of your reference docs.
     skipOptionalParameters: false # When enabled, optional parameters cookies, headers and query params are not included in generated code samples.
