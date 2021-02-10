@@ -17,7 +17,7 @@ referenceDocs:
   # expansions:
 
   expandDefaultServerVariables: false  # CE # enable expanding default server variables
-  expandResponses: "200,201,202,204"  # CE # specify which responses to expand by default by response codes.
+  expandResponses: ""  # CE # specify which responses to expand by default by response codes.
                               # Values should be passed as comma-separated list without spaces e.g. expandResponses="200,201".
                               # Special value "all" expands all responses by default.
                               # Be careful: this option can slow-down documentation rendering time
@@ -84,5 +84,4 @@ referenceDocs:
       - lang: "JavaScript"
       - lang: "Python"
       - lang: "C#" # Can be one of the following supported languages: "curl", "Node.js", "JavaScript", "Python", "C#".
-        label: "" # Optional label for the generated code sample. Can be any string, e.g. "JS" or "Awesome Language". When configured here, the label is displayed insted of "lang" as the tab caption in the Request samples section of your reference docs.
     skipOptionalParameters: false # When enabled, optional parameters cookies, headers and query params are not included in generated code samples.
