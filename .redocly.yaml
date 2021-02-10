@@ -2,20 +2,20 @@ apiDefinitions:
   api: spec/swagger.yaml
 referenceDocs:
   ctrlFHijack: true
-  expandResponses: "200,201,202"
-  payloadSampleIdx: 1
-  htmlTemplate: "../index.html"
-  layout: 
-    showConsole: true
-    scope: section
-    markdownItemsscop: section
-    showNextButton: true
-    showTag: true
-  routingStrategy: broswer
-  sideNavStyle: "path-frst"
-  generateCodeSamples: 
-      languages: 
-        - lang: "curl, Node.js, JavaScript, Python, C#"
-  lint:
-    doNotResolveExamples: true
+  # expandResponses: "200,201,202"
+  # payloadSampleIdx: 1
+  # htmlTemplate: "../index.html"
+  # layout: 
+  #   showConsole: true
+  #   scope: section
+  #   markdownItemsscop: section
+  #   showNextButton: true
+  #   showTag: true
+  # routingStrategy: broswer
+  # sideNavStyle: "path-frst"
+  # generateCodeSamples: 
+  #     languages: 
+  #       - lang: "curl, Node.js, JavaScript, Python, C#"
+  # lint:
+  #   doNotResolveExamples: true
   
