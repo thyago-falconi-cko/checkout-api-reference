@@ -26,11 +26,11 @@
   --cko-code-orange: #BC753F;
   --cko-red: #ec644b;
   --cko-light-red: rgb(253, 117, 95, 0.5);
-  --cko-http-get-color: #2db388;
-  --cko-http-post-color: #00aeef;
-  --cko-http-put-color: #b77ba1;
-  --cko-http-patch-color: #fab82b;
-  --cko-http-del-color: #fd755f;
+  --cko-http-get-color: #009E7E;
+  --cko-http-post-color: #3AB9F4;
+  --cko-http-put-color: #6964B2;
+  --cko-http-patch-color: #F3C25D;
+  --cko-http-del-color: #EE6D5F;
   --S1000: #0C1142;
 }
 
@@ -136,24 +136,14 @@ body {
   padding: 3px 6px!important;
 }
 
-.post {
-  background-color: #3AB9F4!important;
+
+.JScOn { 
+  height: 16px!important;
+  padding-bottom: 14px!important;
 }
 
-.get {
-  background-color: #009E7E!important;
-}
-
-.put {
-  background-color: #6964B2!important;
-}
-
-.delete {
-  background-color: #EE6D5F!important;
-}
-
-.patch {
-  background-color: #F3C25D!important;
+.kwVsTK {
+  color: #fff!important;
 }
 
 /* Logo */
@@ -166,6 +156,13 @@ img.sc-kafWEX.hZCbNs {
   display: none;
 }
 
+/* code block */
+
+.gifTwm {
+  position: unset!important;
+  color: var(--S1000)!important;
+}
+
 /* Logo background */
 
 .sc-feJyhm {
@@ -173,8 +170,13 @@ img.sc-kafWEX.hZCbNs {
 }
 
 .kglDpu {
-  display: block!important;
   color: #0C1142!important;
+  flex-direction: row-reverse;
+  justify-content: flex-end!important;
+}
+
+.SLWpk:first-child, .SLWpk:nth-child(2) {
+  padding-left: 18px;
 }
 
 .ehIQBT {
@@ -201,8 +203,8 @@ b, strong {
 /* Active, hover and loading */
 
 a:active, .active, ul[role="navigation"] label:hover, .loading {
-  color: var(--active) !important;
-  font-weight: 500 !important;
+  color: var(--active)!important;
+  font-weight: 600!important;
 }
 
 /* Menu item hover */
@@ -255,7 +257,8 @@ h5.shv3r-4.gLzrjW {
 }
 
 label.active {
-  font-weight: 500 !important;
+  font-weight: 600!important;
+  background: white!important;
 }
 
 /* Page title */
@@ -554,15 +557,50 @@ i.sc-gqPbQI.hQYSSu {
   border-bottom: none !important;
 }
 
+.dlZseD {
+  flex-direction: row-reverse;
+  justify-content: flex-end!important;
+}
+
+.eENwno > ul > li {
+  width: 85px;
+  border-radius: 2px!important;
+}
+
+.diKSdG, .hkbKVM {
+  background-color: white!important;
+}
+
+.IgAHU {
+  border: 1px solid var(--S1000)!important;
+}
+
 /* Navigation */
 
-label.active, span.sc-gwVKww.SmuWE.active {
+span.sc-gwVKww.SmuWE.active {
   background: var(--sidebar-option-hover) !important;
+}
+
+.-depth2 {
+  padding-left: 30px!important;
 }
 
 .sc-eTuwsz {
   color: var(--secondary-text) !important;
 }
+
+.kqvyFh, .ipyWps, .coHiWB, .cVjXEt.cVjXEt .dropdown-selector-value {
+  color: var(--S1000);
+}
+
+.ehCTyo {
+  color: var(--S1000)!important;
+}
+
+.ipyWps {
+  margin-top: 8px;
+}
+
 
 /* RIGHT MENU */
 
@@ -608,6 +646,18 @@ span.sc-dqBHgY.iENVAs {
   font-family: Courier, monospace !important;
 }
 
+small, .bwSTre {
+  color: var(--cko-white)!important;
+}
+
+.kYvKhJ {
+  z-index: 999!important;
+}
+
+.hhfJd {
+  padding: 12.5px 20px 12.5px 30px!important;
+}
+
 /* Code samples */
 
 span.token.punctuation {
@@ -615,16 +665,14 @@ span.token.punctuation {
 }
 
 .react-tabs__tab-panel, .react-tabs__tab {
-  background: var(--code-background) !important;
-  color: var(--code-bracket) !important;
-  border-color: var(--background-contrast) !important;
+  background: var(--code-background)!important;
+  color: var(--code-bracket)!important;
 }
 
-ul>li.react-tabs__tab, ul>li.tab-success, ul>li.tab-error {
-  margin: 0 5px !important;
-  border-radius: 0 !important;
-  border-width: 2px 0 0 0 !important;
+#react-tabs-93 {
+  background-color: black!important;
 }
+
 
 .react-tabs__tab-list .tab-success {
   border-color: var(--cko-light-green) !important;
@@ -640,7 +688,6 @@ ul>li.react-tabs__tab, ul>li.tab-success, ul>li.tab-error {
 
 .tab-success.react-tabs__tab--selected {
   color: var(--cko-white) !important;
-  border-color: var(--cko-green) !important;
   background: var(--cko-green) !important;
   opacity: 1;
 }
@@ -822,6 +869,11 @@ code span {
 
 .sc-bxivhb li {
   color: var(--secondary-text) !important;
+}
+
+.jEjURK {
+  vertical-align: middle!important;
+  padding: 0px 8px 0px 4px;
 }
 
 /*********************
