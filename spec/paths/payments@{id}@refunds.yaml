@@ -22,14 +22,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/RefundRequest.yaml'
+          $ref: '../components/schemas/Payments/RefundRequest.yaml'
   responses:
     '202':
       description: Refund accepted
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/RefundAcceptedResponse.yaml'
+            $ref: '../components/schemas/Payments/RefundAcceptedResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"

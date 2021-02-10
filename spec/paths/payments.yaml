@@ -139,7 +139,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/PaymentAcceptedResponse.yaml'
+            $ref: '../components/schemas/Payments//PaymentAcceptedResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"

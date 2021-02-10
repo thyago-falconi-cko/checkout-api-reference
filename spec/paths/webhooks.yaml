@@ -16,7 +16,7 @@ get:
           schema:
             type: array
             items:
-              $ref: '../components/schemas/Webhook.yaml'
+              $ref: '../components/schemas/Webhooks/Webhook.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"
@@ -47,7 +47,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Webhook.yaml'
+            $ref: '../components/schemas/Webhooks/Webhook.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"
@@ -60,6 +60,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ValidationError.yaml'
+            $ref: '../components/schemas/Webhooks/ValidationError.yaml'
     '409':
       description: URL already registered for another webhook

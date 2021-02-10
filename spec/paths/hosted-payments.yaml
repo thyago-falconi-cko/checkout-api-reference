@@ -14,14 +14,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: "../components/schemas/HostedPaymentsRequest.yaml"
+          $ref: "../components/schemas/HostedPayments/HostedPaymentsRequest.yaml"
   responses:
     "201":
       description: Created Hosted Payments Page
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/HostedPaymentsResponse.yaml"
+            $ref: "../components/schemas/HostedPayments/HostedPaymentsResponse.yaml"
     "401":
       description: Unauthorized
     "422":

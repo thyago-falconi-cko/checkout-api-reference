@@ -12,14 +12,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/PaymentLinksRequest.yaml'
+          $ref: '../components/schemas/PaymentLinks/PaymentLinksRequest.yaml'
   responses:
     '201':
       description: Create Payment Link Page
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/PaymentLinksResponse.yaml'
+            $ref: '../components/schemas/PaymentLinks/PaymentLinksResponse.yaml'
     '401':
       description: Unauthorized
     '422':

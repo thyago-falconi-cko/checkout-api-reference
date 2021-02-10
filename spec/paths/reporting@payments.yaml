@@ -50,7 +50,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/PaymentsReportResponse.yaml'
+            $ref: '../components/schemas/Reporting/PaymentsReportResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"

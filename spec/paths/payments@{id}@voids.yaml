@@ -22,14 +22,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/VoidRequest.yaml'
+          $ref: '../components/schemas/Payments/VoidRequest.yaml'
   responses:
     '202':
       description: Void accepted
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/VoidAcceptedResponse.yaml'
+            $ref: '../components/schemas/Payments/VoidAcceptedResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"

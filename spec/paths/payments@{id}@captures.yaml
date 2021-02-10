@@ -22,14 +22,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/CaptureRequest.yaml'
+          $ref: '../components/schemas/Payments/CaptureRequest.yaml'
   responses:
     '202':
       description: Capture accepted
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/CaptureAcceptedResponse.yaml'
+            $ref: '../components/schemas/Payments/CaptureAcceptedResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"

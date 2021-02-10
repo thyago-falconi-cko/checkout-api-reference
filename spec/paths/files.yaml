@@ -11,14 +11,14 @@ post:
     content:
       multipart/form-data:
         schema:
-          $ref: "../components/schemas/File.yaml"
+          $ref: "../components/schemas/Disputes/File.yaml"
   responses:
     "200":
       description: File uploaded successfully
       content:
         application/json:
           schema:
-            $ref: "../components/schemas/FileUploadResponse.yaml"
+            $ref: "../components/schemas/Disputes/FileUploadResponse.yaml"
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"

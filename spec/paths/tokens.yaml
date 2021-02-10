@@ -15,14 +15,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/TokenRequest.yaml'
+          $ref: '../components/schemas/Tokens/TokenRequest.yaml'
   responses:
     '201':
       description: Reference token created successfully
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/TokenResponse.yaml'
+            $ref: '../components/schemas/Tokens/TokenResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"
@@ -35,4 +35,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/ValidationError.yaml'
+            $ref: '../components/schemas/Tokens/ValidationError.yaml'

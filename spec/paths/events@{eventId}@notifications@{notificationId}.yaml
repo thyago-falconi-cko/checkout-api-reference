@@ -27,7 +27,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Notification.yaml'
+            $ref: '../components/schemas/Events/Notification.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"

@@ -20,7 +20,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/RetrieveInstrumentResponse.yaml'
+            $ref: '../components/schemas/Instruments/RetrieveInstrumentResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"
@@ -52,14 +52,14 @@ patch:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/UpdateInstrumentRequest.yaml'
+          $ref: '../components/schemas/Instruments/UpdateInstrumentRequest.yaml'
   responses:
     '200':
       description: Instrument updated successfully
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/UpdateInstrumentResponse.yaml'
+            $ref: '../components/schemas/Instruments/UpdateInstrumentResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"
