@@ -40,7 +40,7 @@
   --secondary-text: var(--cko-light-grey);
   --logo: url("./favicons/white-logo.svg");
   --header-link: url("./favicons/link-gray.svg");
-  --link-color: var(--cko-bright-blue);
+  --link-color: var(--secondary-dark-blue);
   --link-hover: var(--cko-light-blue);
   --active: var(--cko-light-blue);
   --background-contrast: var(--cko-dark-contrast-blue);
@@ -112,6 +112,11 @@ body {
 
 /* General text elements */
 
+.redoc-wrap {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
 .redoc-wrap p, h1, h1 a, h3, th, td, span.sc-jKJlTe.eZZMfQ {
   color: var(--secondary-text) !important;
 }
@@ -132,11 +137,14 @@ img.sc-kafWEX.hZCbNs {
   padding: 24px 12px 12px 12px;
 }
 
+.ktbFdU {
+  display: none;
+}
+
 /* Logo background */
 
 .sc-feJyhm {
-  background-color: white!important;
-  padding: 24px;
+  display: none;
 }
 
 .kglDpu {
@@ -158,6 +166,7 @@ img.sc-kafWEX.hZCbNs {
 
 a {
   color: var(--link-color) !important;
+  font-weight: 500!important;
 }
 
 b, strong {
