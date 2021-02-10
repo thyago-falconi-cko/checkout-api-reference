@@ -489,9 +489,12 @@ span.sc-jlyJG.evvbxn {
   box-shadow: none !important;
 }
 
-/* LEFT MENU */
 
 /* Sidebar menu */
+
+.bHbkAB {
+  background-color: white!important;
+}
 
 .menu-content {
   top: 0;
@@ -825,6 +828,8 @@ code span {
       Header
 **********************/
 
+.top
+
 #ht-headerbar header,
 #ht-headerbar menu,
 #ht-headerbar nav,
@@ -1037,6 +1042,10 @@ a.ht-header-icon, .ht-headerbar-right {
   transition: background-color 350ms ease 0s, transform 0.35s ease 0s;
   transform: translateY(0px) translate3d(0px, 0px, 200px);
   background-color: var(--S1000);
+}
+
+.top-header {
+  padding: 0 16px;
 }
 
 .desktop-header-wrapper {
