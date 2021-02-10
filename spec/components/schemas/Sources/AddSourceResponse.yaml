@@ -2,8 +2,8 @@ type: object
 discriminator:
   propertyName: type
   mapping:
-    sepa: '../components/schemas/Sources/01_SepaSourceResponse.yaml'
-    ach: '../components/schemas/Sources/AddSourceResponse.yaml'
+    sepa: './01_SepaSourceResponse.yaml'
+    ach: './AddSourceResponse.yaml'
 required:
   - type
   - response_code
@@ -24,4 +24,4 @@ properties:
     type: object
     description: The customer associated with the payment source if provided in the request
     allOf:
-      - $ref: '../components/schemas/Sources/SourceResponseCustomer.yaml'
+      - $ref: './SourceResponseCustomer.yaml'

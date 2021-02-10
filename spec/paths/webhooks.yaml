@@ -40,7 +40,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/WebhookRequest.yaml'
+          $ref: '../components/schemas/Webhooks/WebhookRequest.yaml'
   responses:
     '201':
       description: Webhook registered successfully
@@ -60,6 +60,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Webhooks/ValidationError.yaml'
+            $ref: '../components/schemas/ValidationError.yaml'
     '409':
       description: URL already registered for another webhook

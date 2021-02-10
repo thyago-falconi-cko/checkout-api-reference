@@ -1,7 +1,9 @@
 servers:
   - url: https://api.checkout.com
     description: Live API
-
+responses: 
+  '404':
+    description: Not found
 get:
   security:
     - ApiSecretKey: []

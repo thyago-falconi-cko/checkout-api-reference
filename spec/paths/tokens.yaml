@@ -35,4 +35,4 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Tokens/ValidationError.yaml'
+            $ref: '../components/schemas/ValidationError.yaml'

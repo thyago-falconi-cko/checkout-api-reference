@@ -33,6 +33,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Sources/ValidationError.yaml'
+            $ref: '../components/schemas/ValidationError.yaml'
     '502':
       description: Bad gateway
