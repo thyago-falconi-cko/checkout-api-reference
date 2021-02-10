@@ -1,7 +1,7 @@
 apiDefinitions: 
   api: spec/swagger.yaml
 # items with `#CE` are supported in the community edition of Redoc
-
+doNotResolveExamples: true
 referenceDocs:
 
   # search:
@@ -12,12 +12,12 @@ referenceDocs:
   searchTagTitleBoost: 8 # Boost coefficient for search terms found in operation titles.
   searchFieldLevelBoost: 0.95 # Boost coefficient for search terms found in field at specific level (if less than 1 searches found deeper would rank lower).
   searchMode: "default" # The search indexing mode. Can be also "path-only" – the index and search only operation paths.
-  ctrlFHijack: false # Brings focus to the search bar when control-F is pushed.
+  ctrlFHijack: true # Brings focus to the search bar when control-F is pushed.
 
   # expansions:
 
   expandDefaultServerVariables: false  # CE # enable expanding default server variables
-  expandResponses: "200,201,202"  # CE # specify which responses to expand by default by response codes.
+  expandResponses: ""  # CE # specify which responses to expand by default by response codes.
                               # Values should be passed as comma-separated list without spaces e.g. expandResponses="200,201".
                               # Special value "all" expands all responses by default.
                               # Be careful: this option can slow-down documentation rendering time
@@ -71,7 +71,7 @@ referenceDocs:
                             # section – render one section (top level heading) at the moment (default if layout.scope is "item").
     showTag: true # Indicate whether to show the tag description on each endpoint page. Applicable only when layout.scope is "item".
     showInfoOnEachPage: false # Indicate whether to show the API info (version, title, download button) on each page. If set to false, it will be shown only on the first page.
-    showNextButton: true # Indicate whether to show the "Next to ..." button at the end of each section.
+    showNextButton: false # Indicate whether to show the "Next to ..." button at the end of each section.
   routingStrategy: browser # Routing strategy. "hash" – URL-fragment based, "browser" – pushState/popState-based (must be used with layout scope section or item)
   routingBasePath: "" # The base path for the PushState-based routing strategy.
   sideNavStyle: "summary-only" # style of sidenav items. Can be also "path-first" – Show the path first, and then show the summary below.
@@ -79,6 +79,9 @@ referenceDocs:
   corsProxyUrl: "" # Controls whether the requests sent from the API Console (the Try it functionality) should go through a CORS proxy. To use the Redocly CORS proxy, set "https://cors.redoc.ly" as the value. Alternatively, set the URL of your own CORS proxy server as the value. The showConsole option must be enabled for this feature to work.
   generateCodeSamples:
     languages:  # Array of language config objects; indicates in which languages to generate code samples.
-      - lang: "curl, Node.js, JavaScript, Python, C#" # Can be one of the following supported languages: "curl", "Node.js", "JavaScript", "Python", "C#".
-        label: "" # Optional label for the generated code sample. Can be any string, e.g. "JS" or "Awesome Language". When configured here, the label is displayed insted of "lang" as the tab caption in the Request samples section of your reference docs.
+      - lang: "curl"
+      - lang: "Node.js" 
+      - lang: "JavaScript"
+      - lang: "Python"
+      - lang: "C#" # Can be one of the following supported languages: "curl", "Node.js", "JavaScript", "Python", "C#".
     skipOptionalParameters: false # When enabled, optional parameters cookies, headers and query params are not included in generated code samples.
