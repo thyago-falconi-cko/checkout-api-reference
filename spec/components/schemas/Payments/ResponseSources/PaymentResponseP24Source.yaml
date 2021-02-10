@@ -5,7 +5,7 @@ type: object
 description: 'P24 Source'
 allOf:
   -
-    $ref: '../Payments/PaymentResponseSource.yaml'
+    $ref: '../PaymentResponseSource.yaml'
   -
     type: object
     properties:

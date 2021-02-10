@@ -2,7 +2,7 @@ type: object
 description: 'KNet Source'
 allOf:
   -
-    $ref: '../Payments/PaymentResponseSource.yaml'
+    $ref: '../PaymentResponseSource.yaml'
   -
     type: object
     properties:
