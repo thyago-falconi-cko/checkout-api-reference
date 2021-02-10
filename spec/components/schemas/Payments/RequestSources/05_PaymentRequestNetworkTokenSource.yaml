@@ -1,7 +1,7 @@
 type: object
 description: A network token payment source
 allOf:
-  - $ref: "#/components/schemas/PaymentRequestSource"
+  - $ref: "#/components/schemas/Payments/PaymentRequestSource.yaml"
   - type: object
     required:
       - type
@@ -66,8 +66,8 @@ allOf:
       billing_address:
         description: The customer's billing address
         allOf:
-          - $ref: '#/components/schemas/Address'
+          - $ref: '#/components/schemas/Address.yaml'
       phone:
         description: The customer's phone number
         allOf:
-          - $ref: '#/components/schemas/PhoneNumber'
+          - $ref: '#/components/schemas/PhoneNumber.yaml'

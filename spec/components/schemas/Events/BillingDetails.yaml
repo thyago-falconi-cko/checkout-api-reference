@@ -19,4 +19,4 @@ properties:
     type: string
     example: Georgia
   phone:
-    $ref: '#/components/schemas/Phone'
+    $ref: '#/components/schemas/Events/Phone.yaml'

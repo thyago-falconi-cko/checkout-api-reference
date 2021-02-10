@@ -3,9 +3,9 @@ description: The source of the payment
 discriminator:
   propertyName: type
   mapping:
-    applepay: '#/components/schemas/01_ApplePayTokenResponse'
-    googlepay: '#/components/schemas/02_GooglePayTokenResponse'
-    card: '#/components/schemas/03_CardTokenResponse'
+    applepay: '#/components/schemas/Tokens/01_ApplePayTokenResponse.yaml'
+    googlepay: '#/components/schemas/Tokens/02_GooglePayTokenResponse.yaml'
+    card: '#/components/schemas/Tokens/03_CardTokenResponse.yaml'
 required:
   - type
   - token
@@ -26,7 +26,7 @@ properties:
   expires_on:
     description: The date/time the token will expire
     allOf:
-      - $ref: '#/components/schemas/ServerTimestamp'
+      - $ref: '#/components/schemas/ServerTimestamp.yaml'
   expiry_month:
     type: integer
     description: The expiry month

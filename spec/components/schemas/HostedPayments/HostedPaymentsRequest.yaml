@@ -51,14 +51,14 @@ properties:
         required:
           - country
         allOf:
-          - $ref: '#/components/schemas/Address'
+          - $ref: '#/components/schemas/Address.yaml'
       phone:
         type: object
         description: The customer's phone number. This will override the phone number specified during tokenization
         required:
           - number
         allOf:
-          - $ref: '#/components/schemas/PhoneNumber'
+          - $ref: '#/components/schemas/PhoneNumber.yaml'
   products:
     type: array
     description: Details about the products in the order
@@ -88,7 +88,7 @@ properties:
             maximum: 100000000
             example: 1000
   risk:
-    $ref: '#/components/schemas/RiskRequest'
+    $ref: '#/components/schemas/Payments/RiskRequest.yaml'
   success_url:
     type: string
     format: uri

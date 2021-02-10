@@ -1,7 +1,7 @@
 type: object
 description: A card payment source
 allOf:
-  - $ref: "#/components/schemas/PaymentResponseSource"
+  - $ref: "#/components/schemas/Payments/PaymentResponseSource.yaml"
   - type: object
     required:
       - expiry_month

@@ -2,7 +2,7 @@ type: object
 required:
   - invoice_number
 allOf:
-  - $ref: "#/components/schemas/PaymentRequestSource"
+  - $ref: "#/components/schemas/Payments/PaymentRequestSource.yaml"
   - type: object
     properties:
       invoice_number:

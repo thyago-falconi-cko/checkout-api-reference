@@ -1,7 +1,7 @@
 type: object
 description: Google Pay Token Request
 allOf:
-  - $ref: '#/components/schemas/TokenRequest'
+  - $ref: '#/components/schemas/Tokens/TokenRequest.yaml'
   - type: object
     properties:
       token_data:

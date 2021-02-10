@@ -1,7 +1,7 @@
 type: object
 description: The SEPA mandate details
 allOf:
-  - $ref: '#/components/schemas/AddSourceResponse'
+  - $ref: '#/components/schemas/Sources/AddSourceResponse.yaml'
   - type: object
     properties:
       response_data:
@@ -21,10 +21,10 @@ allOf:
           self:
             type: object
             allOf:
-              - $ref: '#/components/schemas/Link'
+              - $ref: '#/components/schemas/Links/Link.yaml'
             description: The URI of the payment source
           cancel:
             type: object
             allOf:
-              - $ref: '#/components/schemas/Link'
+              - $ref: '#/components/schemas/Links/Link.yaml'
             description: A link to cancel the SEPA Direct Debit mandate

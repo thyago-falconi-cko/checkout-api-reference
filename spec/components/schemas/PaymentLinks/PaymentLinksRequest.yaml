@@ -56,14 +56,14 @@ properties:
         required:
           - country
         allOf:
-          - $ref: '#/components/schemas/Address'
+          - $ref: '#/components/schemas/Address.yaml'
       phone:
         type: object
         description: The customer's phone number
         required:
           - number
         allOf:
-          - $ref: '#/components/schemas/PhoneNumber'
+          - $ref: '#/components/schemas/PhoneNumber.yaml'
   products:
     type: array
     description: Details about the products in the order

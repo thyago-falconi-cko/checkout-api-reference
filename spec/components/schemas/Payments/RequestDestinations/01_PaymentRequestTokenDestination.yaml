@@ -5,7 +5,7 @@ required:
   - first_name
   - last_name
 allOf:
-  - $ref: "#/components/schemas/PaymentRequestDestination"
+  - $ref: "#/components/schemas/Payments/PaymentRequestDestination.yaml"
   - type: object
     properties:
       token:
@@ -24,10 +24,10 @@ allOf:
       billing_address:
         description: The payout destination owner's billing address. This will override the billing address specified during tokenization
         allOf:
-          - $ref: '#/components/schemas/Address'
+          - $ref: '#/components/schemas/Address.yaml'
       phone:
         description: The payout destination owner's phone number. This will override the phone number specified during tokenization
         allOf:
-          - $ref: '#/components/schemas/PhoneNumber'
+          - $ref: '#/components/schemas/PhoneNumber.yaml'
 
 

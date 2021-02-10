@@ -44,8 +44,8 @@ properties:
   billing_address:
     description: The payment source owner's billing address
     allOf:
-      - $ref: '#/components/schemas/Address'
+      - $ref: '#/components/schemas/Address.yaml'
   phone:
     description: The payment source owner's phone number
     allOf:
-      - $ref: '#/components/schemas/PhoneNumber'
+      - $ref: '#/components/schemas/PhoneNumber.yaml'

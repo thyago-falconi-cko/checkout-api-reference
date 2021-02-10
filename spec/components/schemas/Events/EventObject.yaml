@@ -1,7 +1,7 @@
 type: object
 properties:
   id:
-    $ref: '#/components/schemas/EventId'
+    $ref: '#/components/schemas/Events/EventId.yaml'
   type:
     type: string
     description: The event type
@@ -13,13 +13,13 @@ properties:
   created_on:
     description: The date/time the event occurred
     allOf:
-      - $ref: '#/components/schemas/ServerTimestamp'
+      - $ref: '#/components/schemas/ServerTimestamp.yaml'
   data:
-    $ref: '#/components/schemas/Data'
+    $ref: '#/components/schemas/Events/Data.yaml'
   notifications:
     type: array
     description: The notifications (e.g., webhooks) that have been sent for the event
     items:
-      $ref: '#/components/schemas/NotificationSummary'
+      $ref: '#/components/schemas/Events/NotificationSummary.yaml'
   _links:
-    $ref: '#/components/schemas/EventLinks'
+    $ref: '#/components/schemas/Events/EventLinks.yaml'

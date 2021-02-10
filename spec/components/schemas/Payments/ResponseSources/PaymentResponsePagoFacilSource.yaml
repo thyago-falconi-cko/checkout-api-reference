@@ -5,7 +5,7 @@ type: object
 description: 'PagoFacil Source'
 allOf:
   -
-    $ref: '#/components/schemas/PaymentResponseSource'
+    $ref: '#/components/schemas/Payments/PaymentResponseSource.yaml'
   -
     type: object
     allOf:

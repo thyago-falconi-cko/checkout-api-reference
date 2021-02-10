@@ -10,7 +10,7 @@ properties:
     description: The filename, including its extension
     example: "receipt.jpg"
   purpose:
-    $ref: "#/components/schemas/FilePurpose"
+    $ref: "#/components/schemas/Disputes/FilePurpose.yaml"
   size:
     type: integer
     description: The size of the file upload object (in bytes)
