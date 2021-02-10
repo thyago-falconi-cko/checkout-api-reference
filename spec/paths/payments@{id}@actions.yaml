@@ -21,8 +21,8 @@ get:
       content:
         application/json:
           schema:
-          oneOf:
-           - $ref: '../components/schemas/Payments/PaymentActionsResponse.yaml'
+            oneOf:
+            - $ref: '../components/schemas/Payments/PaymentActionsResponse.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"
