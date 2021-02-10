@@ -6,17 +6,17 @@ required:
   - last4
   - bin
 allOf:
-  - $ref: '#/components/schemas/Tokens/TokenResponse.yaml'
+  - $ref: '../components/schemas/Tokens/TokenResponse.yaml'
   - type: object
     properties:
       billing_address:
         description: The payment source owner's billing address
         allOf:
-          - $ref: '#/components/schemas/Address.yaml'
+          - $ref: '../components/schemas/Address.yaml'
       phone:
         description: The payment source owner's phone number
         allOf:
-          - $ref: '#/components/schemas/PhoneNumber.yaml'
+          - $ref: '../components/schemas/PhoneNumber.yaml'
       expiry_month:
         type: integer
         description: The expiry month

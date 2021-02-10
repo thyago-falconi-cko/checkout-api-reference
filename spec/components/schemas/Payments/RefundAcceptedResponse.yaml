@@ -6,7 +6,7 @@ properties:
   action_id:
     description: The unique identifier for the refund action
     allOf:
-      - $ref: '#/components/schemas/Payments/ActionId.yaml'
+      - $ref: '../components/schemas/Payments/ActionId.yaml'
   reference:
     type: string
     description: Your reference for the refund request
@@ -20,7 +20,7 @@ properties:
       payment:
         type: object
         allOf:
-          - $ref: '#/components/schemas/Links/Link.yaml'
+          - $ref: '../components/schemas/Links/Link.yaml'
         description: The URI of the payment to be refunded. Use this to check the status of the payment
         example:
           href: "https://api.checkout.com/payments/pay_y3oqhf46pyzuxjbcn2giaqnb44"

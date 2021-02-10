@@ -81,7 +81,7 @@ var getFunctionToBuildPaymentRequest = function(paymentSourceName) {
       type: 'object',
       description: paymentSourceName + ' Source',
       allOf: [{
-          $ref: '#/components/schemas/PaymentRequestSource',
+          $ref: '../components/schemas/PaymentRequestSource',
         }, 
         requestData
       ]
@@ -112,7 +112,7 @@ var getFunctionToBuildPaymentResponse = function(paymentSourceName) {
       type: 'object',
       description: paymentSourceName + ' Source',
       allOf: [{
-          $ref: '#/components/schemas/PaymentResponseSource',
+          $ref: '../components/schemas/PaymentResponseSource',
         }, 
         responseData
       ]

@@ -52,4 +52,4 @@ properties:
     type: array
     description: The list of disputes
     items:
-      $ref: "#/components/schemas/Disputes/DisputeSummary.yaml"
+      $ref: "../components/schemas/Disputes/DisputeSummary.yaml"

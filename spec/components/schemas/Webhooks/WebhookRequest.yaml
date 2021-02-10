@@ -26,4 +26,4 @@ properties:
     default: json
     example: json
   event_types:
-    $ref: '#/components/schemas/Webhooks/WebhookEvents.yaml'
+    $ref: '../components/schemas/Webhooks/WebhookEvents.yaml'

@@ -21,7 +21,7 @@ properties:
       self:
         type: object
         allOf:
-          - $ref: '#/components/schemas/Link/Link.yaml'
+          - $ref: '../components/schemas/Link/Link.yaml'
         description: The URI of the payment source
         example:
           href: https://api.checkout.com/sources/src_y3oqhf46pyzuxjbcn2giaqnb44

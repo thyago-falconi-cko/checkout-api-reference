@@ -4,13 +4,13 @@ required:
   - billing_address
   - source_data
 allOf:
-  - $ref: '#/components/schemas/Sources/SourceRequest.yaml'
+  - $ref: '../components/schemas/Sources/SourceRequest.yaml'
   - type: object
     properties:
       billing_address:
         description: The payment source owner's billing address
         allOf:
-        - $ref: '#/components/schemas/01_SepaAddress.yaml'
+        - $ref: '../components/schemas/01_SepaAddress.yaml'
       source_data:
         type: object
         description: Additional data required to create SEPA payment sources

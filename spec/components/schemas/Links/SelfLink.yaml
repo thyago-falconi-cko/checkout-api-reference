@@ -1,6 +1,6 @@
 type: object
 allOf:
-  - $ref: "#/components/schemas/Links/Link.yaml"
+  - $ref: "../components/schemas/Links/Link.yaml"
 properties:
   rel:
     description: The link type

@@ -4,8 +4,8 @@ required:
 discriminator:
   propertyName: type
   mapping:
-    sepa: '#/components/schemas/Sources/01_SepaSource.yaml'
-    ach: '#/components/schemas//Sources/02_AchSource.yaml'
+    sepa: '../components/schemas/Sources/01_SepaSource.yaml'
+    ach: '../components/schemas//Sources/02_AchSource.yaml'
 properties:
   type:
     type: string
@@ -18,7 +18,7 @@ properties:
   phone:
     description: The payment source owner's phone number
     allOf:
-      - $ref: '#/components/schemas/PhoneNumber.yaml'
+      - $ref: '../components/schemas/PhoneNumber.yaml'
   customer:
     type: object
     description: Details of the customer to associate with the source

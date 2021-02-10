@@ -3,7 +3,7 @@ description: Payment destination
 discriminator:
   propertyName: type
   mapping:
-    card: '#/components/schemas/Payments/ResponseDestinations/01_PaymentResponseCardDestination.yaml'
+    card: '../components/schemas/Payments/ResponseDestinations/01_PaymentResponseCardDestination.yaml'
 required:
   - type
 properties:
@@ -21,8 +21,8 @@ properties:
   billing_address:
     description: The payment source owner's billing address
     allOf:
-      - $ref: '#/components/schemas/Address.yaml'
+      - $ref: '../components/schemas/Address.yaml'
   phone:
     description: The payment source owner's phone number
     allOf:
-      - $ref: '#/components/schemas/PhoneNumber.yaml'
+      - $ref: '../components/schemas/PhoneNumber.yaml'

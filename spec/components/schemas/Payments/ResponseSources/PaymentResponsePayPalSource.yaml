@@ -1,4 +1,4 @@
 type: object
 description: 'PayPal payment source'
 allOf:
-  - $ref: "#/components/schemas/Payments/PaymentResponseSource.yaml"
+  - $ref: "../components/schemas/Payments/PaymentResponseSource.yaml"

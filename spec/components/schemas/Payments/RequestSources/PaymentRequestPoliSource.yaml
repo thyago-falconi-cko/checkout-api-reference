@@ -1,4 +1,4 @@
 type: object
 description: POLi Source
 allOf:
-  - $ref: "#/components/schemas/Payments/PaymentRequestSource.yaml"
+  - $ref: "../components/schemas/Payments/PaymentRequestSource.yaml"

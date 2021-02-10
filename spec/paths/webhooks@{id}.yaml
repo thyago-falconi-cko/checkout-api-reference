@@ -71,7 +71,7 @@ put:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Webhooks/ValidationError.yaml'
+            $ref: '../components/schemas/ValidationError.yaml'
     '404':
       description: Webhook not found
     '409':
@@ -99,14 +99,14 @@ patch:
     content:
       application/json:
         schema:
-          $ref: '../components/schemas/WebhookRequest.yaml'
+          $ref: '../components/schemas/Webhooks/WebhookRequest.yaml'
   responses:
     '200':
       description: Updated webhook
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Webhook.yaml'
+            $ref: '../components/schemas/Webhooks/Webhook.yaml'
       headers:
         Cko-Request-Id:
           $ref: "../components/headers/Cko-Request-Id.yaml"

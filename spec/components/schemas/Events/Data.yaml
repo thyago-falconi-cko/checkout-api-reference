@@ -4,11 +4,11 @@ properties:
   id:
     description: The payment unique identifier
     allOf:
-      - $ref: '#/components/schemas/Payments/PaymentId.yaml'
+      - $ref: '../components/schemas/Payments/PaymentId.yaml'
   action_id:
     description: The unique identifier for the action performed against this payment
     allOf:
-      - $ref: '#/components/schemas/Payments/ActionId.yaml'
+      - $ref: '../components/schemas/Payments/ActionId.yaml'
   amount:
     type: integer
     description: The payment amount
@@ -53,7 +53,7 @@ properties:
     type: object
     description: Provides 3D Secure enrollment status if the payment was downgraded to non-3D Secure
     allOf:
-      - $ref: '#/components/schemas/Payments/3dsEnrollmentData.yaml'
+      - $ref: '../components/schemas/Payments/3dsEnrollmentData.yaml'
     example:
       downgraded: true
       enrolled: N
@@ -66,16 +66,16 @@ properties:
     description: The source of the payment
     type: object
     allOf:
-      - $ref: '#/components/schemas/Payments/PaymentResponseSource.yaml'
+      - $ref: '../components/schemas/Payments/PaymentResponseSource.yaml'
   customer:
     type: object
     description: The customer to which this payment is linked
     allOf:
-      - $ref: '#/components/schemas/Payments/PaymentResponseCustomer.yaml'
+      - $ref: '../components/schemas/Payments/PaymentResponseCustomer.yaml'
   processed_on:
     description: The date/time the payment was processed
     allOf:
-      - $ref: '#/components/schemas/ServerTimestamp.yaml'
+      - $ref: '../components/schemas/ServerTimestamp.yaml'
   reference:
     type: string
     description: Your reference for the payment
