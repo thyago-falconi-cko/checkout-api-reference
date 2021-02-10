@@ -37,7 +37,7 @@ info:
 
     Never share your secret keys. Keep them guarded and secure.
 externalDocs:
-  description: For specific guidance and use cases see out documentation.
+  description: For specific guidance and use cases see our documentation.
   url: https://docs.checkout.com
 servers:
   - url: https://api.checkout.com
