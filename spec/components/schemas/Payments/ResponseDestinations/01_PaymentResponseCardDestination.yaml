@@ -1,7 +1,7 @@
 type: object
 description: A card payment destination
 allOf:
-  - $ref: "../components/schemas/Payments/PaymentResponseDestination.yaml"
+  - $ref: "../PaymentResponseDestination.yaml"
   - type: object
     required:
       - expiry_month
