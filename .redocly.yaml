@@ -17,7 +17,7 @@ referenceDocs:
   # expansions:
 
   expandDefaultServerVariables: false  # CE # enable expanding default server variables
-  expandResponses: "200,201"  # CE # specify which responses to expand by default by response codes.
+  expandResponses: "200,201,202"  # CE # specify which responses to expand by default by response codes.
                               # Values should be passed as comma-separated list without spaces e.g. expandResponses="200,201".
                               # Special value "all" expands all responses by default.
                               # Be careful: this option can slow-down documentation rendering time
@@ -55,7 +55,7 @@ referenceDocs:
                         # Can be boolean or an array of string with names of extensions to display.
 
   untrustedSpec: false # CE  # if set, the spec is considered untrusted and all HTML/markdown is sanitized to prevent XSS
-  htmlTemplate: "" # CE  # Path to the optional HTML file used to modify the layout of the reference docs page.
+  htmlTemplate: "./web/index.html" # CE  # Path to the optional HTML file used to modify the layout of the reference docs page.
 
   # Premium Feature options
 
