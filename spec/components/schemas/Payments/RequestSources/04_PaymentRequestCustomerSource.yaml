@@ -1,7 +1,7 @@
 type: object
 description: A customer source
 allOf:
-  - $ref: "../components/schemas/Payments/PaymentRequestSource.yaml"
+  - $ref: "../PaymentRequestSource.yaml"
   - type: object
     properties:
       id:

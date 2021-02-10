@@ -10,7 +10,7 @@ allOf:
       billing_address:
         description: The payment source owner's billing address
         allOf:
-        - $ref: './01_SepaAddress.yaml'
+        - $ref: '../01_SepaAddress.yaml'
       source_data:
         type: object
         description: Additional data required to create SEPA payment sources

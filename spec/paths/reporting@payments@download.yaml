@@ -28,5 +28,5 @@ get:
       required: false
       description: Date and time until which to search for payments
   responses:
-    '404':
-      description: Not found
+    '200':
+      description: CVS downloaded
