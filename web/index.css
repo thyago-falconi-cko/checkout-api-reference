@@ -31,6 +31,7 @@
   --cko-http-put-color: #b77ba1;
   --cko-http-patch-color: #fab82b;
   --cko-http-del-color: #fd755f;
+  --S1000: #0C1142;
 }
 
 .dark {
@@ -129,6 +130,30 @@ body {
 
 .api-content {
   background-color: var(--background) !important;
+}
+
+.operation-type {
+  padding: 3px 6px!important;
+}
+
+.post {
+  background-color: #3AB9F4!important;
+}
+
+.get {
+  background-color: #009E7E!important;
+}
+
+.put {
+  background-color: #6964B2!important;
+}
+
+.delete {
+  background-color: #EE6D5F!important;
+}
+
+.patch {
+  background-color: #F3C25D!important;
 }
 
 /* Logo */
@@ -502,8 +527,8 @@ input.search-input {
 }
 
 .search-icon {
-  right: 32px!important;
-  left: 0px!important;
+  left: 244px!important;
+  top: 24px!important;
 }
 
 i.k4h4y9-4.jGkewb {
@@ -1233,7 +1258,7 @@ a.ht-header-icon, .ht-headerbar-right {
 
 .subfooter-logo {
   padding-left: 24px;
-  color: #0C1142;
+  color: #0C1142!important;
 }
 
 .subfooter-wrapper-logos svg * {
