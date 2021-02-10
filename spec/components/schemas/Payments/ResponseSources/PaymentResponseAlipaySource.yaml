@@ -1,4 +1,4 @@
 type: object
 description: An Alipay payment source
 allOf:
-  - $ref: "../components/schemas/Payments/PaymentResponseSource.yaml"
+  - $ref: "../PaymentResponseSource.yaml"

@@ -1,7 +1,7 @@
 servers:
   - url: https://api.checkout.com
     description: Live API
-    
+
 get:
   security:
     - ApiSecretKey: []
@@ -10,9 +10,6 @@ get:
   summary: Get CSV single statement report
   operationId: GetCsvSingleStatementReport
   description: Downloads a CSV statement report containing all of the data related to a specific statement, based on the statement's identifier.
-  responses: 
-  '200':
-    description: Downloaded CSV
   parameters:
     - in: path
       name: StatementId
@@ -21,3 +18,6 @@ get:
         type: string
       required: true
       description: The unique statement identifier
+  responses: 
+    '200':
+      description: Downloaded CSV
