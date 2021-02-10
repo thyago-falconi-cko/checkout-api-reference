@@ -27,11 +27,6 @@
 </head>
 
 <body class="light">
-  <div class="toggle-track">
-    <div class="toggle-moon">🌛</div>
-    <div class="toggle-sun">☀️</div>
-    <div class="toggle-thumb"></div>
-  </div>
   <script>
     // Set theme based on local storage
     var toggle = document.querySelector('.toggle-track');
@@ -61,106 +56,113 @@
     })
   </script>
 
-  <!-- <nav class="headerbar" id="headerbar">
-    <div id="ht-headerbar">
-        <div class="ht-headerbar-left">
-            <div class="section-logo">
-                <a class="header-logo-container" title="Checkout.com logo" href="$home.link">
-                    <img 
-                        src="favicons/dark-logo.svg" 
-                        alt="Checkout.com logo" 
-                        height="22.4"
-                        width="224">
-                </a>
-            </div>                
-        </div>
-        <div class="ht-headerbar-center">
-        </div>
-        
-        </div>
-        <div class="ht-headerbar-right">
-            <div class="mobile-header-right">
-                <button 
-                    aria-label="Menu" 
-                    aria-controls="navigation" 
-                    aria-expanded="false"
-                    class="hamburger hamburger--collapse menu-button" 
-                    id="ht-menu-toggle" 
-                    type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-            <div class="header-right-main section-menu header-grid">
-                <ul>
-                    <li>
-                        <div class="desktop-header-wrapper" tabIndex="0">
-                            <h6 id="logInTab" class="desktop-main-header-item">Log in
-                                <img src="favicons/icon-arrow-down.svg" alt="icon">
-                            </h6>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="header-button-container">
-                            <button 
-                                fill="greenFill" 
-                                rel="noopener" 
-                                href="https://www.checkout.com/get-test-account" 
-                                target="_blank" 
-                                class="btn-primary">Get test account</a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="login-menu">
-                    <div class="hub-label">
-                        <div class="hub-text">
-                            <img 
-                                src="favicons/login-menu.svg" 
-                                height="16" 
-                                width="16" 
-                                alt="Hub" 
-                                class="login-menu-img" 
-                                loading="lazy"/>
-                            The hub
-                        </div>
-                        <p class="hub-p">Monitor transactions, business performance and customer trends.</p>
-                        <button class="btn-primary login-btn" href="https://hub.checkout.com/login" target="_blank">Log In</button>
-                        <p class="hub-or-p">or</p>
-                        <a href="https://www.checkout.com/get-test-account" rel="noopener" class="apply-for-account" target="_blank">
-                            <span class="apply-account-text">Apply for an account</span>
-                            <img 
-                                src="favicons/icon-arrow-right.svg" 
-                                height="16" 
-                                width="16" 
-                                alt="arrow"
-                                loading="lazy"/>
-                        </a>
-                    </div>
-                    <div class="test-account-label">
-                        <div class="hub-text">
-                            <img 
-                                src="favicons/login-menu.svg" 
-                                height="16"
-                                width="16" 
-                                alt="Test account" 
-                                class="login-menu-img" 
-                                loading="lazy"/>
-                            Test account
-                        </div>
-                        <div class="hub-bottom-links">
-                            <a class="test-acc-text" href="https://sandbox.checkout.com/login" target="_blank" rel="noopener">Log in</a>
-                            <p class="login-or-p">or</p>
-                            <a class="test-acc-text" href="https://www.checkout.com/get-test-account" rel="noopener" target="_blank">
-                                apply for an account
-                            </a>
-                        </div>
-                    </div>
+  <header>
+    <div class="headerbar">
+      <div class="top-header">
+          <div class="section-logo">
+              <a href="$home.link" title="Checkout logo" style="margin-top: 28px!important">
+                  <img alt="Checkout logo" height="32" width="160" src="favicons/developer-logo.svg">
+              </a>
+              <div class="desktop-header-wrapper developer-menu-header" tabIndex="0">
+                  <h6 id="developerMenu" class="desktop-main-header-item developer-menu-item">FAQ
+                      <img src="favicons/icon-arrow-down.svg" alt="icon" style="margin-left: 4px;">
+                  </h6>
+              </div>
+              <div class="login-menu dev-menu">
+                <div class="dev-label">
+                    <a class="dev-text" href="https://docs.checkout.com/">
+                        <img 
+                            src="favicons/api-ref.svg" 
+                            height="16" 
+                            width="16" 
+                            alt="API Reference" 
+                            class="login-menu-img" 
+                            loading="lazy"/>
+                        Documentation
+                    </a>
+                    <p class="hub-p">Our reference library for integrating with our API</p>
+                </div>
+                <div class="dev-label">
+                    <a class="dev-text" href="/faq">
+                        <img 
+                            src="favicons/faq.svg" 
+                            height="16" 
+                            width="16" 
+                            alt="Checkout.com FAQ" 
+                            class="login-menu-img" 
+                            loading="lazy"/>
+                        FAQ
+                    </a>
+                    <p class="hub-p">Find answers to our most frequently asked questions</p>
                 </div>
             </div>
-        </div>
+          </div>
+          <div class="section-menu">
+              <ul>
+                  <li>
+                      <div class="desktop-header-wrapper login-menu-header" tabIndex="0">
+                          <h6 id="logInTab" class="desktop-main-header-item login-menu-item">Log in
+                              <img src="favicons/icon-arrow-down.svg" alt="icon" style="margin-left: 4px;">
+                          </h6>
+                      </div>
+                      <div class="login-menu">
+                        <div class="hub-label">
+                            <div class="hub-text">
+                                <img 
+                                    src="favicons/login-menu.svg" 
+                                    height="16" 
+                                    width="16" 
+                                    alt="Hub" 
+                                    class="login-menu-img" 
+                                    loading="lazy"/>
+                                The hub
+                            </div>
+                            <p class="hub-p">Monitor transactions, business performance and customer trends.</p>
+                            <button class="btn-primary login-btn" href="https://hub.checkout.com/login" target="_blank">Log In</button>
+                            <p class="hub-or-p">or</p>
+                            <a href="https://www.checkout.com/get-test-account" rel="noopener" class="apply-for-account" target="_blank">
+                                <span class="apply-account-text">Apply for an account</span>
+                                <img 
+                                    src="favicons/icon-arrow-right.svg" 
+                                    height="16" 
+                                    width="16" 
+                                    alt="arrow"
+                                    loading="lazy"/>
+                            </a>
+                        </div>
+                        <div class="test-account-label">
+                            <div class="hub-text">
+                                <img 
+                                    src="favicons/login-menu.svg" 
+                                    height="16"
+                                    width="16" 
+                                    alt="Test account" 
+                                    class="login-menu-img" 
+                                    loading="lazy"/>
+                                Test account
+                            </div>
+                            <div class="hub-bottom-links">
+                                <a class="test-acc-text" href="https://sandbox.checkout.com/login" target="_blank" rel="noopener">Log in</a>
+                                <p class="login-or-p">or</p>
+                                <a class="test-acc-text" href="https://www.checkout.com/get-test-account" rel="noopener" target="_blank">
+                                    apply for an account
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li>
+                      <div class="toggle-track">
+                          <div class="toggle-moon">🌛</div>
+                          <div class="toggle-sun">☀️</div>
+                          <div class="toggle-thumb"></div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
     </div>
-  </nav> -->
+  </header>
   
   {{{redocHTML}}}
 
