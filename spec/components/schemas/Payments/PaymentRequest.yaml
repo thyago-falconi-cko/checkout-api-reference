@@ -3,7 +3,7 @@ required:
   - currency
 properties:
   source:
-    $ref: '../components/schemas/Payments/PaymentRequestSource.yaml'
+    $ref: './PaymentRequestSource.yaml'
   amount:
     type: integer
     description: |
@@ -53,7 +53,7 @@ properties:
       Providing this field will automatically set `capture` to true
 
     allOf:
-      - $ref: '../components/schemas/Timestamp.yaml'
+      - $ref: '../Timestamp.yaml'
   customer:
     type: object
     description: The customer's details
@@ -77,7 +77,7 @@ properties:
         maxLength: 255
         example: "Jack Napier"
   billing_descriptor:
-    $ref: '../components/schemas/Payments/BillingDescriptor.yaml'
+    $ref: './BillingDescriptor.yaml'
   shipping:
     type: object
     description: The shipping details
@@ -85,13 +85,13 @@ properties:
       address:
         description: The shipping address
         allOf:
-          - $ref: '../components/schemas/Address.yaml'
+          - $ref: '../Address.yaml'
       phone:
         description: The phone number associated with the shipping address
         allOf:
           - $ref: '../components/schemas/PhoneNumber'
   3ds:
-    $ref: '../components/schemas/Payments/3dsRequest.yaml'
+    $ref: './3dsRequest.yaml'
   previous_payment_id:
     type: string
     description: |
@@ -100,7 +100,7 @@ properties:
     maxLength: 100
     example: "pay_fun26akvvjjerahhctaq2uzhu4"
   risk:
-    $ref: '../components/schemas/Payments/RiskRequest.yaml'
+    $ref: './RiskRequest.yaml'
   success_url:
     type: string
     format: uri
@@ -116,9 +116,9 @@ properties:
   payment_ip:
     description: The IP address used to make the payment. Required for some risk checks
     allOf:
-      - $ref: '../components/schemas/IPAddress.yaml'
+      - $ref: '../IPAddress.yaml'
   recipient:
-    $ref: '../components/schemas/Payments/PaymentRecipient.yaml'
+    $ref: './PaymentRecipient.yaml'
   processing:
     type: object
     description: Use the processing object to influence or override the data sent during card processing

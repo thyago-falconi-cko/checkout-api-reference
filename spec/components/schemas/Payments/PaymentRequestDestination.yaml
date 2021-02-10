@@ -3,9 +3,9 @@ description: The destination of the payout.<br><i>Use to pay out to a card</i>.
 discriminator:
   propertyName: type
   mapping:
-    token: '../components/schemas/01_PaymentRequestTokenDestination'
-    id: '../components/schemas/02_PaymentRequestIdDestination'
-    card: '../components/schemas/03_PaymentRequestCardDestination'
+    token: './RequestDestinations/01_PaymentRequestTokenDestination.yaml'
+    id: './RequestDestinations/02_PaymentRequestIdDestination.yaml'
+    card: './RequestDestinations/03_PaymentRequestCardDestination.yaml'
 required:
   - type
 properties:

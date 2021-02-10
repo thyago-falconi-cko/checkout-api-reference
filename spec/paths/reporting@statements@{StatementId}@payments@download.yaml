@@ -1,9 +1,7 @@
 servers:
   - url: https://api.checkout.com
     description: Live API
-responses: 
-  '404':
-    description: Not found
+
 get:
   security:
     - ApiSecretKey: []
@@ -12,7 +10,9 @@ get:
   summary: Get CSV single statement report
   operationId: GetCsvSingleStatementReport
   description: Downloads a CSV statement report containing all of the data related to a specific statement, based on the statement's identifier.
-
+  responses: 
+  '404':
+    description: Not found
   parameters:
     - in: path
       name: StatementId

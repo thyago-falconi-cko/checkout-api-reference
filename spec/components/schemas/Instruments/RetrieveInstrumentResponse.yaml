@@ -96,7 +96,7 @@ properties:
             phone:
                 description: The phone number of the account holder
                 allOf:
-                    - $ref: "../Phone.yaml"
+                    - $ref: "../Events/Phone.yaml"
     customer:
         type: object
         description: The customer attached to the instrument

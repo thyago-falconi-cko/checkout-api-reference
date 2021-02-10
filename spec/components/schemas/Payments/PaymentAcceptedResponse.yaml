@@ -8,7 +8,7 @@ properties:
     description: The payment's unique identifier
     readOnly: true
     allOf:
-      - $ref: './Payments/PaymentId.yaml'
+      - $ref: './PaymentId.yaml'
   status:
     type: string
     description: The status of the payment

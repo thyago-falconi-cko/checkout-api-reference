@@ -5,7 +5,7 @@ discriminator:
   propertyName: type
   mapping:
     sepa: './01_SepaSource.yaml'
-    ach: './Sources/02_AchSource.yaml'
+    ach: './02_AchSource.yaml'
 properties:
   type:
     type: string
