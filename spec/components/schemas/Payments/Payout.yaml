@@ -1,5 +1,8 @@
 type: object
 required:
+  - source
+  - source.type
+  - source.token
   - currency
 properties:
   destination:
