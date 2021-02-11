@@ -119,26 +119,6 @@ components:
       type: apiKey
       in: header
       name: Authorization
-x-tagGroups:
-  - name: Make payments
-    tags: 
-      - Payments
-      - Payment Links
-      - Hosted Payments
-  - name: Store card or payment details
-    tags:
-      - Sources
-      - Tokens
-      - Instruments
-  - name: Notifications
-    tags: 
-      - Webhooks
-      - Events
-  - name: Customer details
-    tags: 
-      - Customers
-  - name: Reporting and insights
-    tags: Reconcilliation
 tags:
   - name: Payments
     description: Process and manage payments from a variety of sources and to various destinations all within one integration.
@@ -165,14 +145,23 @@ tags:
   # - name: Files
   #   description: |
   #     Upload files to be used as input to other APIs
-# x-tagGroups:
-#   - name: Gateway
-#     tags:
-#       - Payments
-#       - Tokens
-#       - Sources
-#       - Files
-#   - name: Broadcast
-#     tags:
-#       - Events
-#       - Webhooks
+x-tagGroups:
+  - name: Make payments
+    tags: 
+      - Payments
+      - Payment Links
+      - Hosted Payments
+  - name: Store card or payment details
+    tags:
+      - Sources
+      - Tokens
+      - Instruments
+  - name: Notifications
+    tags: 
+      - Webhooks
+      - Events
+  - name: Customer details
+    tags: 
+      - Customers
+  - name: Reporting and insights
+    tags: Reconcilliation
