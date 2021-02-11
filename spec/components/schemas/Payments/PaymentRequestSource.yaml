@@ -30,9 +30,35 @@ discriminator:
     dLocal: './RequestSources/06_PaymentRequestdLocalSource.yaml'
     sofort: './RequestSources/PaymentRequestSofortSource.yaml'
 required:
-  - type
+  - type  
+  - number
+  - expiry_month
+  - expiry_year
 properties:
   type:
     type: string
     description: The payment source type <br> *Note:* *To make a payment with full card details, you must be <a href="https://docs.checkout.com/risk-management/pci-compliance" target="blank">SAQ D PCI compliant</a>*
     example: "card"
+  number:
+    type: integer
+    description: The card number (without separators)
+    example: 4242424242424242
+    maxLength: 19
+    minLength: 19
+  expiry_month:
+    type: integer
+    description: The expiry month of the card
+    example: 5
+    minLength: 1
+    maxLength: 2
+  expiry_year:
+    type: integer
+    description: The expiry year of the card
+    example: 2025
+    maxLength: 4
+    minLength: 2
+  cvv:
+    type: integer
+    descriotion: The card cvv
+    example: 100
+   
