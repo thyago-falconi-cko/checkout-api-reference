@@ -160,8 +160,9 @@ x-tagGroups:
     tags: 
       - Webhooks
       - Events
-  - name: Customer details
+  - name: Customers
     tags: 
       - Customers
+      - Disputes
   - name: Reporting and insights
     tags: Reconcilliation
