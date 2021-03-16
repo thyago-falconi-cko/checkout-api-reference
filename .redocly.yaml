@@ -44,12 +44,7 @@ referenceDocs:
   noAutoAuth: false  # CE # do not inject Authentication section automatically.
   onlyRequiredInSamples: false  # CE # shows only required fields in request samples.
   pathInMiddlePanel:  false  # CE # show path link and HTTP verb in the middle panel instead of the right one.
-  scrollYOffset: 0 # CE  # If set, specifies a vertical scroll-offset. This is often useful when there are
-                   # fixed positioned elements at the top of the page, such as navbars, headers etc;
-                   # scrollYOffset can be specified in various ways:
-                   #  - number: A fixed number of pixels to be used as offset.
-                   #  - css selector: selector of the element to be used for specifying the offset. The distance from the top of the page to the element's bottom will be used as offset.
-                   #  - function (advanced): A getter function. Must return a number representing the offset (in pixels).
+  scrollYOffset: headerbar
 
   showExtensions: false # CE  # show vendor extensions ("x-" fields). Extensions used by ReDoc are ignored.
                         # Can be boolean or an array of string with names of extensions to display.
@@ -60,7 +55,8 @@ referenceDocs:
   # Premium Feature options
 
   showConsole: true # Enable the API Console (the Try it functionality).
-  hideLogo: false # Hide API Logo from x-logo vendor extension
+  hideLogo: true # Hide API Logo from x-logo vendor extension
+  pagination: section
   layout:
     scope: section # Controls the scope of the simultaneously rendered items.
                    # - all – render all the items.
