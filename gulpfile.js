@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var util = require('gulp-util')
 var gulpConnect = require('gulp-connect');
 var exec = require('gulp-exec');
+var fileinclude = require('gulp-file-include');
 var connect = require('connect');
 var cors = require('cors');
 var portfinder = require('portfinder');
@@ -65,4 +66,14 @@ gulp.task('start_site', function(cb) {
       });
 })
 
-gulp.task('serve', gulp.series('build', gulp.parallel('watch', 'edit', 'start_site')));
+gulp.task('fileinclude', function() {
+  gulp.src(['web/index.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('serve', gulp.series('build', gulp.parallel('fileinclude', 'watch', 'edit', 'start_site')));
+
