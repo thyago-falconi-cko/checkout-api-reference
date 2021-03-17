@@ -75,5 +75,5 @@ gulp.task('fileinclude', function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('serve', gulp.series('build', gulp.parallel('fileinclude', 'watch', 'edit', 'start_site')));
+gulp.task('serve', gulp.series('build', gulp.parallel('watch', 'edit', 'start_site')));
 
