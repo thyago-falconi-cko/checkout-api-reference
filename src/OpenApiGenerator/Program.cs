@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.OpenApi.Readers;
 using Microsoft.OpenApi.Writers;
-using System.Net.Http;
 using System.Text;
 
 namespace OpenApiGenerator
