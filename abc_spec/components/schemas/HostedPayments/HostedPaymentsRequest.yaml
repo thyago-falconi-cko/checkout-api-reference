@@ -35,13 +35,33 @@ properties:
         type: string
         format: email
         description: An optional email address to associate with the customer
-        example: jokershere@email.com
+        example: brucewayne@email.com
         maxLength: 255
       name:
         type: string
         description: The customer's name. This will only set the name for new customers
-        example: Jack Napier
+        example: Bruce Wayne
         maxLength: 255
+  shipping:
+    type: object
+    description: The address any products are being sent to.
+    required:
+      - address
+    properties:
+      address:
+        type: object
+        description: The customer's address to ship to.
+        required:
+          - country
+        allOf:
+          - $ref: '#/components/schemas/Address'
+      phone:
+        type: object
+        description: The customer's phone number
+        required:
+          - number
+        allOf:
+          - $ref: '#/components/schemas/PhoneNumber'
   billing:
     type: object
     additionalProperties: false
@@ -63,6 +83,15 @@ properties:
           - number
         allOf:
           - $ref: '#/components/schemas/PhoneNumber'
+  recipient:
+    $ref: '#/components/schemas/PaymentRecipient'
+  processing:
+    type: object
+    description: Use the processing object to influence or override the data sent during card processing.
+    properties:
+      aft:
+        type: boolean
+        description: Indicates whether the payment is an [Account Funding Transaction](https://docs.checkout.com/payment-actions/account-funding-transactions).
   products:
     type: array
     description: Details about the products in the order
