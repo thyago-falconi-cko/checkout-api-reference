@@ -34,36 +34,14 @@ properties:
           description: A reference you can later use to identify this split, such as an order number.
           maxLength: 50
           example: 'ORD-5023-4E89'
-        # description:
-        #   type: string
-        #   description: A description of the split.
-        #   maxLength: 100
-        #   example: 'Set of 3 masks'
         commission:
           type: object
           title: Commission
-          # description: The fee you'd like to apply to this split - this will be credited to your currency account.
           description: |
             Commission you'd like to collect from this split - this will be credited to your currency account. The commission cannot exceed the split amount.
 
             Commission = (`amount` * `commission.percentage`) + `commission.amount`
           properties:
-            #   type:
-            #     type: number
-            #     description: The fee type.
-            #     enum:
-            #       - Fixed
-            #       - Variable
-            #     example: Fixed
-            #   amount:
-            #     type: number
-            #     description: |
-            #       The fee amount.
-
-            #       If the fee type is `Fixed` The amount must be provided in the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a> and cannot exceed the split amount. If the fee type is `Variable` the amount cannot exceed 100.
-            #     minimum: 0
-            #     example: 1000
-            # NEW
             amount:
               type: integer
               description: |
@@ -74,7 +52,6 @@ properties:
               example: 1000
             percentage:
               type: number
-              # multipleOf: 0.00000001
               description: |
                 Optional percentage of commission to collect.
 
