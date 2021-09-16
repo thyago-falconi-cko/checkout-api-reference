@@ -1,0 +1,26 @@
+name: Deploy Open API postman collection
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  CI: true
+
+jobs:
+  run-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14.x
+
+      - name: Install node modules
+        run: npm ci --ignore-scripts
+
+      - name: Deploy Open API Postman collection
+        run: npm run postman 
